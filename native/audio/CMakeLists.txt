@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.22)
+project(decanat_audio LANGUAGES CXX)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(WEBRTC REQUIRED IMPORTED_TARGET webrtc-audio-processing-1)
+add_library(decanat_audio SHARED src/apm.cpp)
+target_compile_features(decanat_audio PRIVATE cxx_std_17)
+target_link_libraries(decanat_audio PRIVATE PkgConfig::WEBRTC)
+set_target_properties(decanat_audio PROPERTIES CXX_VISIBILITY_PRESET hidden)
+install(TARGETS decanat_audio LIBRARY DESTINATION lib RUNTIME DESTINATION bin)
+

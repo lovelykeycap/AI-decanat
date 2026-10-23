@@ -1,0 +1,58 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "kb_id": {
+      "pattern": "^[a-z0-9_-]{1,80}$",
+      "title": "Kb Id",
+      "type": "string"
+    },
+    "release_id": {
+      "pattern": "^[a-zA-Z0-9._-]{1,80}$",
+      "title": "Release Id",
+      "type": "string"
+    },
+    "title": {
+      "maxLength": 200,
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "language": {
+      "const": "ru",
+      "title": "Language",
+      "type": "string"
+    },
+    "prepared_by": {
+      "maxLength": 200,
+      "minLength": 1,
+      "title": "Prepared By",
+      "type": "string"
+    },
+    "prepared_at": {
+      "title": "Prepared At",
+      "type": "string"
+    },
+    "documents_file": {
+      "const": "documents.jsonl",
+      "title": "Documents File",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "kb_id",
+    "release_id",
+    "title",
+    "language",
+    "prepared_by",
+    "prepared_at",
+    "documents_file"
+  ],
+  "title": "Manifest",
+  "type": "object"
+}

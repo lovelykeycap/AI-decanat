@@ -1,0 +1,10 @@
+{
+  "FileVersion": 3,
+  "Category": "Education",
+  "Description": "ИИ-аватар деканата",
+  "Modules": [{"Name": "Decanat", "Type": "Runtime", "LoadingPhase": "Default"}],
+  "Plugins": [
+    {"Name": "PythonScriptPlugin", "Enabled": true, "TargetAllowList": ["Editor"]},
+    {"Name": "EditorScriptingUtilities", "Enabled": true, "TargetAllowList": ["Editor"]}
+  ]
+}

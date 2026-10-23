@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "kb_id": "fictional-dean-office",
+  "release_id": "sample-1",
+  "title": "ВЫМЫШЛЕННЫЕ ДАННЫЕ ДЛЯ ПРОВЕРКИ — не рабочая база вуза",
+  "language": "ru",
+  "prepared_by": "Тестовый набор проекта",
+  "prepared_at": "2026-10-20T10:00:00+03:00",
+  "documents_file": "documents.jsonl"
+}

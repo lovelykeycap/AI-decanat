@@ -1,0 +1,42 @@
+{
+  "$defs": {
+    "AnswerStatus": {
+      "enum": [
+        "answer",
+        "clarify",
+        "insufficient_evidence",
+        "conflicting_evidence"
+      ],
+      "title": "AnswerStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Only the provider-generated fields; IDs are assigned by the application.",
+  "properties": {
+    "status": {
+      "$ref": "#/$defs/AnswerStatus"
+    },
+    "answer_text": {
+      "maxLength": 8000,
+      "minLength": 1,
+      "title": "Answer Text",
+      "type": "string"
+    },
+    "source_ids": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 12,
+      "title": "Source Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "status",
+    "answer_text",
+    "source_ids"
+  ],
+  "title": "GeneratedAnswer",
+  "type": "object"
+}

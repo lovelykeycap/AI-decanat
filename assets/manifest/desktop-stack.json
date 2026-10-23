@@ -1,0 +1,35 @@
+{
+  "status": "candidate_not_compiled_or_accepted",
+  "target_os": "Windows 11 x64",
+  "engine_family": "Unreal Engine 5.6",
+  "engine_patch_verified": null,
+  "download_login_available": false,
+  "ace": {
+    "candidate_archive": "nv_ace_reference-ue5.6-v2.5.0rc3.zip",
+    "download_url": "https://developer.nvidia.com/downloads/assets/ace/nv_ace_reference-ue5.6-v2.5.0rc3.zip",
+    "sha256": null,
+    "download_requires": "NVIDIA Developer login",
+    "installed": false
+  },
+  "face_model": {
+    "candidate": "Mark 3.0 diffusion",
+    "provider": "LocalA2F-Mark",
+    "plugin": "NvAudio2FaceMark",
+    "download_url": "https://developer.nvidia.com/downloads/assets/ace/ace_3.0_a2f_models.zip",
+    "sha256": null,
+    "installed": false,
+    "license": "NVIDIA Open Model License; inspect actual downloaded package before redistribution"
+  },
+  "character": {
+    "type": "fictional MetaHuman",
+    "created": false,
+    "appearance_approved": false,
+    "asset_paths": []
+  },
+  "sources": [
+    "https://developer.nvidia.com/ace-for-games",
+    "https://archive.docs.nvidia.com/ace/ace-unreal-plugin/2.5/ace-unreal-plugin-install.html",
+    "https://archive.docs.nvidia.com/ace/ace-unreal-plugin/2.5/ace-unreal-plugin-support-matrix.html",
+    "https://archive.docs.nvidia.com/ace/ace-unreal-plugin/2.5/ace-unreal-plugin-animation.html"
+  ]
+}
